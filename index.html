@@ -15,18 +15,29 @@
       <div class="number">?</div>
     </header>
     <main>
-      <section class="left">
-        <input type="number" class="guess" />
-        <button class="btn check">Check!</button>
-      </section>
-      <section class="right">
-        <p class="message">Start guessing...</p>
-        <p class="label-score">💯 Score: <span class="score">20</span></p>
-        <p class="label-highscore">
-          🥇 Highscore: <span class="highscore">0</span>
-        </p>
-      </section>
+      <div class="main">
+        <section class="left">
+          <input type="number" class="guess" />
+          <button class="btn check">Check!</button>
+        </section>
+        <section class="right">
+          <p class="message">Start guessing...</p>
+          <p class="label-score">💯 Score: <span class="score">20</span></p>
+          <p class="label-highscore">
+            🥇 Highscore: <span class="highscore">0</span>
+          </p>
+        </section>
+      </div>
+      <div class="congrats pop model hidden">congratulationn! You Won 🎉🎉</div>
+      <div class="lost pop model hidden">Sorry you lost 😑Try Again?</div>
+      <div class="overlay hidden"></div>
     </main>
     <script src="script.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </body>
 </html>
